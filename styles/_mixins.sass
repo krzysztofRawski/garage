@@ -1,0 +1,40 @@
+@mixin button
+    display: flex
+    align-items: center
+    margin-right: 1rem
+    background-color: $accent
+    color: $text-icons
+    padding: 0.5rem 1rem
+    border-radius: 0.5rem
+    border: none
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.2)
+    text-transform: uppercase
+    &.active
+        background-color: $dark-accent
+    &:hover
+        cursor: pointer
+        box-shadow: 2px 4px 6px rgba(0,0,0,0.2)
+        background-color: darken($accent, 7%)
+    svg
+        margin-right: 0.5rem
+    &.add
+        background-color: $add
+    &.send
+        background-color: $light-primary
+@mixin table
+    border-collapse: collapse
+    width: 100%
+    td, th
+        padding: 0.5rem
+        text-align: center
+    tr
+        &:nth-child(even)
+            background-color: $bg
+        th
+            padding: 1rem 0
+            background-color: $accent
+            color: white
+
+@mixin small
+    @media (max-width: 1199px)
+        @content

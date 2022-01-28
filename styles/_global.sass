@@ -1,0 +1,41 @@
+body
+  background-color: $bg
+  background-attachment: fixed
+  background-size: cover
+  margin: 0
+  padding: 0
+  color: $text
+  h1, h2, h3, h4
+    color: $text
+  h1
+    font-size: 1.5rem
+  h2
+    font-size: 1.35rem
+  h3
+    font-size: 1.25rem
+  h4
+    font-size: 1.15rem
+  .app
+    background-color: #fff
+    max-width: 1200px
+    margin: 2rem auto
+    min-height: 93vh
+    border-radius: 0.5rem
+    @include small
+      margin: 1rem
+    form
+      button
+        margin-top: 1rem
+    .error
+      color: $fail
+      padding: 1rem 0 0 0
+      margin: 0
+      &::before
+        content: 'Błąd: '
+    button
+      @include button
+      &:disabled
+        cursor: default
+        background-color: #999999
+        &:hover
+          box-shadow: 1px 2px 4px rgba(0,0,0,0.2)

@@ -1,0 +1,28 @@
+.main-header
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  background: $light-primary
+  background: linear-gradient(to left, $primary, $light-primary)
+  border-radius: 0.5rem 0.5rem 0 0
+  padding: 2rem
+  nav
+    ul
+      list-style-type: none
+      display: flex
+      padding: 0
+      a
+        text-decoration: none
+      li
+        @include button
+  a
+    text-decoration: none
+  .logo
+    text-align: center
+    color: $text-icons
+    h1
+      color: $text-icons
+      margin-bottom: 0.5rem
+    p
+      margin: 0

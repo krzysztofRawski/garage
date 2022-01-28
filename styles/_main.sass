@@ -1,0 +1,71 @@
+.app
+    main
+        padding: 2rem
+        .login-form
+            background-color: #F7F7F7
+            max-width: 50%
+            margin: 0 auto
+            text-align: center
+            padding: 1rem
+            box-shadow: 1px 2px 4px rgba(0,0,0,0.2)
+            button
+                margin: 1rem auto 0
+        input
+            padding: 0.5rem 1rem
+        table
+            @include table
+            .actions
+                display: flex
+                justify-content: center
+                align-items: center
+                button
+                    padding: 0.3rem 0.7rem
+                    svg
+                        margin: 0
+                    &.edit
+                        background-color: $edit
+                    &.delete
+                        background-color: $delete
+        header
+            display: flex
+            justify-content: space-between
+            align-items: center
+            button
+                padding: 0.5rem 1rem
+                svg
+                    margin: 0
+        .search
+            display: flex
+            justify-content: center
+            align-items: center
+            form
+                display: flex
+                justify-content: center
+                align-items: center
+                position: relative
+                input
+                    margin-right: 0.5rem
+                    padding: 0.65rem 1rem
+                svg
+                    position: absolute
+                    right: 15px
+            button
+                padding: 0.5rem 1rem
+                svg
+                    margin: 0
+        .car, .user
+            nav
+                display: flex
+                justify-content: flex-end
+                margin-bottom: 1rem
+            button
+                padding: 0.5rem 1rem
+                svg
+                    margin: 0
+        .editable
+            display: flex
+            align-items: center
+            button
+                padding: 0.2rem 0.5rem
+            h2
+                margin-right: 1rem
